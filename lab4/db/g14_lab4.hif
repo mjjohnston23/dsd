@@ -1,0 +1,138 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+11
+980
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+g14_asp_registers
+# storage
+db|g14_lab4.(3).cnf
+db|g14_lab4.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+g14_asp_registers.vhd
+399761bf899eb5addb2575e5826b8f1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+g14_sp_player_combined
+# storage
+db|g14_lab4.(1).cnf
+db|g14_lab4.(1).cnf
+# case_insensitive
+# source_file
+g14_sp_player_combined.bdf
+e4d96ae5bbf49f3271956a2fbb9f89b3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+g14_gra_arr
+# storage
+db|g14_lab4.(2).cnf
+db|g14_lab4.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+g14_gra_arr.vhd
+236213a1cdb9e49a8684a2cc062f919
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+g14_gra_arr:inst
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+g14_sp_player
+# storage
+db|g14_lab4.(0).cnf
+db|g14_lab4.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+g14_sp_player.vhd
+d5b0d5d81518ec18ade0f49bdb149f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+g14_sp_player:inst4
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

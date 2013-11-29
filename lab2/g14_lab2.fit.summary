@@ -1,0 +1,10 @@
+Fitter Status : Failed - Thu Oct 13 14:28:00 2011
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Full Version
+Revision Name : g14_lab2
+Top-level Entity Name : g14_longest_row
+Family : FLEX10K
+Device : EPF10K70RC240-4
+Timing Models : Final
+Total logic elements : 258 / 3,744 ( 7 % )
+Total pins : 212 / 189 ( 112 % )
+Total memory bits : 0 / 18,432 ( 0 % )

@@ -1,0 +1,75 @@
+-- Determining the row configuration of disks stored in ASP or SP registers
+--
+-- entity name: g14_row_config
+--
+-- Copyright (C) 2011
+-- Version 1.0
+-- Author: Johnston and Colomb
+-- Date: 7 Ocotber 2011
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+package define_ASP_2 is
+	type ASP_array is array(0 to 3) of std_logic_vector(2 downto 0);
+end package define_ASP_2;
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+library work;
+use work.define_ASP.all;
+
+entity g14_row_config is
+	port(ASP_r_i, ASP_c_i : in ASP_array;
+		horiz, vertic, l_r_diag, r_l_diag : out bit);
+end g14_row_config;
+
+architecture a of g14_row_config is
+begin 
+
+row_config: process(ASP_r_i, ASP_c_i)
+
+variable ASP_r_i_0_int, ASP_c_i_0_int : integer range 0 to 7;
+variable ASP_r_i_1_int, ASP_c_i_1_int : integer range 0 to 7;
+variable horiz_temp, vertic_temp, l_r_diag_temp, r_l_diag_temp : bit;
+variable ASP_r_i_0_temp, ASP_r_i_1_temp, ASP_c_i_0_temp, ASP_c_i_1_temp : std_logic_vector(2 downto 0);
+
+begin
+horiz_temp := '0';
+vertic_temp := '0';
+l_r_diag_temp := '0';
+r_l_diag_temp := '0';
+
+ASP_r_i_0_temp := ASP_r_i(0);
+ASP_c_i_0_temp := ASP_c_i(0);
+ASP_r_i_1_temp := ASP_r_i(1);
+ASP_c_i_1_temp := ASP_c_i(1);
+
+ASP_r_i_0_int := to_integer(unsigned(ASP_r_i_0_temp));
+ASP_c_i_0_int := to_integer(unsigned(ASP_c_i_0_temp));
+ASP_r_i_1_int := to_integer(unsigned(ASP_r_i_1_temp));
+ASP_c_i_1_int := to_integer(unsigned(ASP_c_i_1_temp));
+
+if((ASP_r_i_0_int = ASP_r_i_1_int)and(ASP_c_i_0_int = ASP_c_i_1_int -1))then
+	horiz_temp := '1';
+elsif(ASP_r_i_1_int = 7) then
+	horiz_temp := '1';
+elsif((ASP_r_i_0_int  = ASP_r_i_1_int - 1)and(ASP_c_i_0_int = ASP_c_i_1_int))then
+	vertic_temp := '1';
+elsif((ASP_r_i_0_int = ASP_r_i_1_int - 1)and(ASP_c_i_0_int = ASP_c_i_1_int + 1))then
+	l_r_diag_temp := '1';
+elsif((ASP_r_i_0_int = ASP_r_i_1_int - 1)and(ASP_c_i_0_int = ASP_c_i_1_int - 1))then
+	r_l_diag_temp := '1';
+end if;
+
+horiz <= horiz_temp;
+vertic <= vertic_temp;
+l_r_diag <= l_r_diag_temp;
+r_l_diag <= r_l_diag_temp;
+end process;
+
+end a;

@@ -1,0 +1,12 @@
+library ieee;
+library lpm;
+use ieee.std_logic_1164.all;
+
+use lpm.lpm_components.all;
+
+entity g14_7_segment_decoder is
+
+port( ascii_code : in std_logic_vector(6 downto 0);
+		segments_out : out std_logic_vector(6 downto 0));
+end g14_7_segment_decoder;
+

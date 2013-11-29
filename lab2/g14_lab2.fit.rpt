@@ -1,0 +1,949 @@
+Fitter report for g14_lab2
+Thu Oct 13 14:28:00 2011
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Fitter Device Options
+  6. Input Pins
+  7. Output Pins
+  8. All Package Pins
+  9. Cascade Chains
+ 10. Non-Global High Fan-Out Signals
+ 11. Fitter Resource Usage Summary
+ 12. Fitter Resource Utilization by Entity
+ 13. Delay Chain Summary
+ 14. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------+
+; Fitter Summary                                                        ;
++-----------------------+-----------------------------------------------+
+; Fitter Status         ; Failed - Thu Oct 13 14:28:00 2011             ;
+; Quartus II Version    ; 9.0 Build 235 06/17/2009 SP 2 SJ Full Version ;
+; Revision Name         ; g14_lab2                                      ;
+; Top-level Entity Name ; g14_longest_row                               ;
+; Family                ; FLEX10K                                       ;
+; Device                ; EPF10K70RC240-4                               ;
+; Timing Models         ; Final                                         ;
+; Total logic elements  ; 258 / 3,744 ( 7 % )                           ;
+; Total pins            ; 212 / 189 ( 112 % )                           ;
+; Total memory bits     ; 0 / 18,432 ( 0 % )                            ;
++-----------------------+-----------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                      ;
++------------------------------------------------------------+--------------------+--------------------+
+; Option                                                     ; Setting            ; Default Value      ;
++------------------------------------------------------------+--------------------+--------------------+
+; Device                                                     ; EPF10K70RC240-4    ;                    ;
+; Use smart compilation                                      ; Off                ; Off                ;
+; Use TimeQuest Timing Analyzer                              ; Off                ; Off                ;
+; Router Timing Optimization Level                           ; Normal             ; Normal             ;
+; Placement Effort Multiplier                                ; 1.0                ; 1.0                ;
+; Router Effort Multiplier                                   ; 1.0                ; 1.0                ;
+; Optimize Timing                                            ; Normal compilation ; Normal compilation ;
+; Optimize Timing for ECOs                                   ; Off                ; Off                ;
+; Regenerate full fit report during ECO compiles             ; Off                ; Off                ;
+; Optimize IOC Register Placement for Timing                 ; On                 ; On                 ;
+; Limit to One Fitting Attempt                               ; Off                ; Off                ;
+; Final Placement Optimizations                              ; Automatically      ; Automatically      ;
+; Fitter Aggressive Routability Optimizations                ; Automatically      ; Automatically      ;
+; Fitter Initial Placement Seed                              ; 1                  ; 1                  ;
+; Slow Slew Rate                                             ; Off                ; Off                ;
+; Auto Global Memory Control Signals                         ; Off                ; Off                ;
+; Logic Cell Insertion - Individual Logic Cells              ; On                 ; On                 ;
+; Logic Cell Insertion - I/Os Fed By Carry or Cascade Chains ; On                 ; On                 ;
+; Fitter Effort                                              ; Auto Fit           ; Auto Fit           ;
+; Auto Global Clock                                          ; On                 ; On                 ;
+; Auto Global Output Enable                                  ; On                 ; On                 ;
+; Auto Global Register Control Signals                       ; On                 ; On                 ;
+; Force Fitter to Avoid Periphery Placement Warnings         ; Off                ; Off                ;
++------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------+
+; Fitter Device Options                                                   ;
++----------------------------------------------+--------------------------+
+; Option                                       ; Setting                  ;
++----------------------------------------------+--------------------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off                      ;
+; Enable device-wide reset (DEV_CLRn)          ; Off                      ;
+; Enable device-wide output enable (DEV_OE)    ; Off                      ;
+; Enable INIT_DONE output                      ; Off                      ;
+; Configuration scheme                         ; Passive Serial           ;
+; nWS, nRS, nCS, CS                            ; Unreserved               ;
+; RDYnBUSY                                     ; Unreserved               ;
+; Data[7..1]                                   ; Unreserved               ;
+; Reserve all unused pins                      ; As output driving ground ;
+; Base pin-out file on sameframe device        ; Off                      ;
++----------------------------------------------+--------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                         ;
++---------------+------------+-----+------+---------+--------+--------------+-------------------------+---------------+---------------+--------------+
+; Name          ; Pin #      ; Row ; Col. ; Fan-Out ; Global ; I/O Register ; Use Local Routing Input ; Power Up High ; Single-Pin CE ; I/O Standard ;
++---------------+------------+-----+------+---------+--------+--------------+-------------------------+---------------+---------------+--------------+
+; ASP_c_0[3][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_0[3][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_0[3][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_0[2][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_0[2][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_0[2][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_0[1][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_0[1][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_0[1][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_0[0][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_0[0][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_0[0][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_1[3][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_1[3][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_1[3][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_1[2][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_1[2][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_1[2][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_1[1][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_1[1][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_1[1][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_1[0][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_1[0][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_1[0][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_2[3][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_2[3][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_2[3][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_2[2][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_2[2][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_2[2][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_2[1][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_2[1][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_2[1][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_2[0][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_2[0][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_2[0][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_3[3][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_3[3][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_3[3][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_3[2][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_3[2][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_3[2][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_3[1][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_3[1][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_3[1][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_3[0][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_3[0][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_3[0][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_4[3][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_4[3][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_4[3][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_4[2][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_4[2][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_4[2][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_4[1][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_4[1][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_4[1][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_4[0][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_4[0][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_4[0][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_5[3][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_5[3][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_5[3][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_5[2][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_5[2][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_5[2][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_5[1][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_5[1][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_5[1][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_5[0][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_5[0][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_5[0][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_6[3][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_6[3][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_6[3][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_6[2][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_6[2][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_6[2][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_6[1][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_6[1][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_6[1][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_6[0][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_6[0][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_6[0][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_7[3][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_7[3][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_7[3][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_7[2][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_7[2][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_7[2][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_7[1][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_7[1][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_7[1][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_7[0][0] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_7[0][1] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_c_7[0][2] ; Unassigned ; --  ; --   ; 0       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_7[0][0] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_7[0][2] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_7[0][1] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_7[1][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_7[1][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_7[1][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_7[2][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_7[2][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_7[2][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_7[3][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_7[3][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_7[3][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_dr[2]     ; Unassigned ; --  ; --   ; 5       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_empty[2]  ; Unassigned ; --  ; --   ; 5       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_3[0][0] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_3[0][2] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_3[0][1] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_3[1][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_3[1][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_3[1][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_3[2][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_3[2][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_3[2][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_3[3][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_3[3][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_3[3][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_1[0][0] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_1[0][2] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_1[0][1] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_1[1][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_1[1][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_1[1][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_empty[0]  ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_dr[0]     ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_0[0][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_0[0][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_0[0][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_0[1][0] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_0[1][2] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_0[1][1] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_0[2][0] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_0[2][2] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_0[2][1] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_0[3][0] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_0[3][2] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_0[3][1] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_1[2][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_1[2][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_1[2][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_1[3][0] ; Unassigned ; --  ; --   ; 3       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_1[3][2] ; Unassigned ; --  ; --   ; 3       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_1[3][1] ; Unassigned ; --  ; --   ; 3       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_dr[1]     ; Unassigned ; --  ; --   ; 5       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_empty[1]  ; Unassigned ; --  ; --   ; 5       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_2[0][0] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_2[0][2] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_2[0][1] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_2[1][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_2[1][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_2[1][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_2[2][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_2[2][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_2[2][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_2[3][0] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_2[3][2] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_2[3][1] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_dr[3]     ; Unassigned ; --  ; --   ; 5       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_empty[3]  ; Unassigned ; --  ; --   ; 5       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_dr[4]     ; Unassigned ; --  ; --   ; 6       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_empty[4]  ; Unassigned ; --  ; --   ; 6       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_5[0][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_5[0][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_5[0][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_5[1][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_5[1][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_5[1][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_5[2][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_5[2][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_5[2][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_5[3][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_5[3][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_5[3][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_4[0][0] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_4[0][2] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_4[0][1] ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_4[1][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_4[1][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_4[1][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_4[2][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_4[2][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_4[2][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_4[3][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_4[3][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_4[3][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_dr[5]     ; Unassigned ; --  ; --   ; 5       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_empty[5]  ; Unassigned ; --  ; --   ; 5       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_6[0][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_6[0][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_6[0][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_6[1][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_6[1][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_6[1][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_6[2][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_6[2][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_6[2][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_6[3][0] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_6[3][2] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_r_6[3][1] ; Unassigned ; --  ; --   ; 2       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_dr[6]     ; Unassigned ; --  ; --   ; 5       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_empty[6]  ; Unassigned ; --  ; --   ; 5       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_empty[7]  ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; ASP_dr[7]     ; Unassigned ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; NM            ; Unassigned ; --  ; --   ; 3       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
++---------------+------------+-----+------+---------+--------+--------------+-------------------------+---------------+---------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                  ;
++-------------+------------+-----+------+--------------+--------------------------+---------------+----------------+---------------+---------------+------------+---------------+--------------+
+; Name        ; Pin #      ; Row ; Col. ; I/O Register ; Use Local Routing Output ; Power Up High ; Slow Slew Rate ; Single-Pin OE ; Single-Pin CE ; Open Drain ; TRI Primitive ; I/O Standard ;
++-------------+------------+-----+------+--------------+--------------------------+---------------+----------------+---------------+---------------+------------+---------------+--------------+
+; ASP_lrow[2] ; Unassigned ; --  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; ASP_lrow[1] ; Unassigned ; --  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; ASP_lrow[0] ; Unassigned ; --  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
++-------------+------------+-----+------+--------------+--------------------------+---------------+----------------+---------------+---------------+------------+---------------+--------------+
+
+
++-----------------------------------+
+; All Package Pins                  ;
++-------+------------+--------------+
+; Pin # ; Usage      ; I/O Standard ;
++-------+------------+--------------+
+; 1     ; #TCK       ;              ;
+; 2     ; ^CONF_DONE ;              ;
+; 3     ; ^nCEO      ;              ;
+; 4     ; #TDO       ;              ;
+; 5     ; VCC_INT    ;              ;
+; 6     ; GND*       ;              ;
+; 7     ; GND*       ;              ;
+; 8     ; GND*       ;              ;
+; 9     ; GND*       ;              ;
+; 10    ; GND_INT    ;              ;
+; 11    ; GND*       ;              ;
+; 12    ; GND*       ;              ;
+; 13    ; GND*       ;              ;
+; 14    ; GND*       ;              ;
+; 15    ; GND*       ;              ;
+; 16    ; VCC_INT    ;              ;
+; 17    ; GND*       ;              ;
+; 18    ; GND*       ;              ;
+; 19    ; GND*       ;              ;
+; 20    ; GND*       ;              ;
+; 21    ; GND*       ;              ;
+; 22    ; GND_INT    ;              ;
+; 23    ; GND*       ;              ;
+; 24    ; GND*       ;              ;
+; 25    ; GND*       ;              ;
+; 26    ; GND*       ;              ;
+; 27    ; VCC_INT    ;              ;
+; 28    ; GND*       ;              ;
+; 29    ; GND*       ;              ;
+; 30    ; GND*       ;              ;
+; 31    ; GND*       ;              ;
+; 32    ; GND_INT    ;              ;
+; 33    ; GND*       ;              ;
+; 34    ; GND*       ;              ;
+; 35    ; GND*       ;              ;
+; 36    ; GND*       ;              ;
+; 37    ; VCC_INT    ;              ;
+; 38    ; GND*       ;              ;
+; 39    ; GND*       ;              ;
+; 40    ; GND*       ;              ;
+; 41    ; GND*       ;              ;
+; 42    ; GND_INT    ;              ;
+; 43    ; GND*       ;              ;
+; 44    ; GND*       ;              ;
+; 45    ; GND*       ;              ;
+; 46    ; GND*       ;              ;
+; 47    ; VCC_INT    ;              ;
+; 48    ; GND*       ;              ;
+; 49    ; GND*       ;              ;
+; 50    ; GND*       ;              ;
+; 51    ; GND*       ;              ;
+; 52    ; GND_INT    ;              ;
+; 53    ; GND*       ;              ;
+; 54    ; GND*       ;              ;
+; 55    ; GND*       ;              ;
+; 56    ; GND*       ;              ;
+; 57    ; VCC_INT    ;              ;
+; 58    ; #TMS       ;              ;
+; 59    ; #TRST      ;              ;
+; 60    ; ^nSTATUS   ;              ;
+; 61    ; GND*       ;              ;
+; 62    ; GND*       ;              ;
+; 63    ; GND*       ;              ;
+; 64    ; GND*       ;              ;
+; 65    ; GND*       ;              ;
+; 66    ; GND*       ;              ;
+; 67    ; GND*       ;              ;
+; 68    ; GND*       ;              ;
+; 69    ; GND_INT    ;              ;
+; 70    ; GND*       ;              ;
+; 71    ; GND*       ;              ;
+; 72    ; GND*       ;              ;
+; 73    ; GND*       ;              ;
+; 74    ; GND*       ;              ;
+; 75    ; GND*       ;              ;
+; 76    ; GND*       ;              ;
+; 77    ; VCC_INT    ;              ;
+; 78    ; GND*       ;              ;
+; 79    ; GND*       ;              ;
+; 80    ; GND*       ;              ;
+; 81    ; GND*       ;              ;
+; 82    ; GND*       ;              ;
+; 83    ; GND*       ;              ;
+; 84    ; GND*       ;              ;
+; 85    ; GND_INT    ;              ;
+; 86    ; GND*       ;              ;
+; 87    ; GND*       ;              ;
+; 88    ; GND*       ;              ;
+; 89    ; VCC_INT    ;              ;
+; 90    ; GND+       ;              ;
+; 91    ; GND+       ;              ;
+; 92    ; GND+       ;              ;
+; 93    ; GND_INT    ;              ;
+; 94    ; GND*       ;              ;
+; 95    ; GND*       ;              ;
+; 96    ; VCC_INT    ;              ;
+; 97    ; GND*       ;              ;
+; 98    ; GND*       ;              ;
+; 99    ; GND*       ;              ;
+; 100   ; GND*       ;              ;
+; 101   ; GND*       ;              ;
+; 102   ; GND*       ;              ;
+; 103   ; GND*       ;              ;
+; 104   ; GND_INT    ;              ;
+; 105   ; GND*       ;              ;
+; 106   ; GND*       ;              ;
+; 107   ; GND*       ;              ;
+; 108   ; GND*       ;              ;
+; 109   ; GND*       ;              ;
+; 110   ; GND*       ;              ;
+; 111   ; GND*       ;              ;
+; 112   ; VCC_INT    ;              ;
+; 113   ; GND*       ;              ;
+; 114   ; GND*       ;              ;
+; 115   ; GND*       ;              ;
+; 116   ; GND*       ;              ;
+; 117   ; GND*       ;              ;
+; 118   ; GND*       ;              ;
+; 119   ; GND*       ;              ;
+; 120   ; GND*       ;              ;
+; 121   ; ^nCONFIG   ;              ;
+; 122   ; VCC_INT    ;              ;
+; 123   ; ^MSEL1     ;              ;
+; 124   ; ^MSEL0     ;              ;
+; 125   ; GND_INT    ;              ;
+; 126   ; GND*       ;              ;
+; 127   ; GND*       ;              ;
+; 128   ; GND*       ;              ;
+; 129   ; GND*       ;              ;
+; 130   ; VCC_INT    ;              ;
+; 131   ; GND*       ;              ;
+; 132   ; GND*       ;              ;
+; 133   ; GND*       ;              ;
+; 134   ; GND*       ;              ;
+; 135   ; GND_INT    ;              ;
+; 136   ; GND*       ;              ;
+; 137   ; GND*       ;              ;
+; 138   ; GND*       ;              ;
+; 139   ; GND*       ;              ;
+; 140   ; VCC_INT    ;              ;
+; 141   ; GND*       ;              ;
+; 142   ; GND*       ;              ;
+; 143   ; GND*       ;              ;
+; 144   ; GND*       ;              ;
+; 145   ; GND_INT    ;              ;
+; 146   ; GND*       ;              ;
+; 147   ; GND*       ;              ;
+; 148   ; GND*       ;              ;
+; 149   ; GND*       ;              ;
+; 150   ; VCC_INT    ;              ;
+; 151   ; GND*       ;              ;
+; 152   ; GND*       ;              ;
+; 153   ; GND*       ;              ;
+; 154   ; GND*       ;              ;
+; 155   ; GND_INT    ;              ;
+; 156   ; GND*       ;              ;
+; 157   ; GND*       ;              ;
+; 158   ; GND*       ;              ;
+; 159   ; GND*       ;              ;
+; 160   ; VCC_INT    ;              ;
+; 161   ; GND*       ;              ;
+; 162   ; GND*       ;              ;
+; 163   ; GND*       ;              ;
+; 164   ; GND*       ;              ;
+; 165   ; GND_INT    ;              ;
+; 166   ; GND*       ;              ;
+; 167   ; GND*       ;              ;
+; 168   ; GND*       ;              ;
+; 169   ; GND*       ;              ;
+; 170   ; VCC_INT    ;              ;
+; 171   ; GND*       ;              ;
+; 172   ; GND*       ;              ;
+; 173   ; GND*       ;              ;
+; 174   ; GND*       ;              ;
+; 175   ; GND*       ;              ;
+; 176   ; GND_INT    ;              ;
+; 177   ; #TDI       ;              ;
+; 178   ; ^nCE       ;              ;
+; 179   ; ^DCLK      ;              ;
+; 180   ; ^DATA0     ;              ;
+; 181   ; GND*       ;              ;
+; 182   ; GND*       ;              ;
+; 183   ; GND*       ;              ;
+; 184   ; GND*       ;              ;
+; 185   ; GND*       ;              ;
+; 186   ; GND*       ;              ;
+; 187   ; GND*       ;              ;
+; 188   ; GND*       ;              ;
+; 189   ; VCC_INT    ;              ;
+; 190   ; GND*       ;              ;
+; 191   ; GND*       ;              ;
+; 192   ; GND*       ;              ;
+; 193   ; GND*       ;              ;
+; 194   ; GND*       ;              ;
+; 195   ; GND*       ;              ;
+; 196   ; GND*       ;              ;
+; 197   ; GND_INT    ;              ;
+; 198   ; GND*       ;              ;
+; 199   ; GND*       ;              ;
+; 200   ; GND*       ;              ;
+; 201   ; GND*       ;              ;
+; 202   ; GND*       ;              ;
+; 203   ; GND*       ;              ;
+; 204   ; GND*       ;              ;
+; 205   ; VCC_INT    ;              ;
+; 206   ; GND*       ;              ;
+; 207   ; GND*       ;              ;
+; 208   ; GND*       ;              ;
+; 209   ; GND*       ;              ;
+; 210   ; GND+       ;              ;
+; 211   ; GND+       ;              ;
+; 212   ; GND+       ;              ;
+; 213   ; GND*       ;              ;
+; 214   ; GND*       ;              ;
+; 215   ; GND*       ;              ;
+; 216   ; GND_INT    ;              ;
+; 217   ; GND*       ;              ;
+; 218   ; GND*       ;              ;
+; 219   ; GND*       ;              ;
+; 220   ; GND*       ;              ;
+; 221   ; GND*       ;              ;
+; 222   ; GND*       ;              ;
+; 223   ; GND*       ;              ;
+; 224   ; VCC_INT    ;              ;
+; 225   ; GND*       ;              ;
+; 226   ; GND*       ;              ;
+; 227   ; GND*       ;              ;
+; 228   ; GND*       ;              ;
+; 229   ; GND*       ;              ;
+; 230   ; GND*       ;              ;
+; 231   ; GND*       ;              ;
+; 232   ; GND_INT    ;              ;
+; 233   ; GND*       ;              ;
+; 234   ; GND*       ;              ;
+; 235   ; GND*       ;              ;
+; 236   ; GND*       ;              ;
+; 237   ; GND*       ;              ;
+; 238   ; GND*       ;              ;
+; 239   ; GND*       ;              ;
+; 240   ; GND*       ;              ;
++-------+------------+--------------+
+
+
++----------------+
+; Cascade Chains ;
++--------+-------+
+; Length ; Count ;
++--------+-------+
+; 3      ; 2     ;
+; 2      ; 18    ;
++--------+-------+
+
+
++---------------------------------+
+; Non-Global High Fan-Out Signals ;
++----------------+----------------+
+; Name           ; Fan-Out        ;
++----------------+----------------+
+; ASP_length~354 ; 11             ;
+; ASP_length~366 ; 11             ;
+; ASP_length~375 ; 11             ;
+; ASP_length~359 ; 10             ;
+; ASP_length~372 ; 9              ;
+; Add21~3        ; 8              ;
+; Add13~3        ; 8              ;
+; ASP_length~343 ; 8              ;
+; Equal2~1       ; 8              ;
+; Add4~3         ; 8              ;
+; ASP_length~299 ; 8              ;
+; LessThan19~5   ; 7              ;
+; Add7~2         ; 7              ;
+; Equal3~1       ; 7              ;
+; Equal1~1       ; 7              ;
+; Add3~3         ; 7              ;
+; Add18~3        ; 6              ;
+; ASP_length~328 ; 6              ;
+; Add9~3         ; 6              ;
+; Add7~3         ; 6              ;
+; LessThan11~12  ; 6              ;
+; LessThan6~12   ; 6              ;
+; Add4~5         ; 6              ;
+; ASP_length~351 ; 6              ;
+; Equal0~1       ; 6              ;
+; ASP_length~293 ; 6              ;
+; Add13~2        ; 6              ;
+; ASP_dr[4]      ; 6              ;
+; ASP_empty[4]   ; 6              ;
+; Add15~3        ; 6              ;
+; ASP_length~314 ; 6              ;
+; ASP_length~315 ; 6              ;
+; Add18~2        ; 5              ;
+; Add19~2        ; 5              ;
+; Equal11~1      ; 5              ;
+; Add6~3         ; 5              ;
+; ASP_length~349 ; 5              ;
+; Add4~4         ; 5              ;
+; Add22~3        ; 5              ;
+; Add6~2         ; 5              ;
+; ASP_length~319 ; 5              ;
+; Add12~3        ; 5              ;
+; ASP_empty[6]   ; 5              ;
+; Add10~2        ; 5              ;
+; ASP_dr[6]      ; 5              ;
+; ASP_dr[5]      ; 5              ;
+; ASP_empty[5]   ; 5              ;
+; Add9~2         ; 5              ;
+; ASP_dr[3]      ; 5              ;
+; ASP_empty[3]   ; 5              ;
++----------------+----------------+
+
+
++---------------------------------------------------------+
+; Fitter Resource Usage Summary                           ;
++-----------------------------------+---------------------+
+; Resource                          ; Usage               ;
++-----------------------------------+---------------------+
+; Total logic elements              ; 258 / 3,744 ( 7 % ) ;
+; Registers                         ; 0 / 3,744 ( 0 % )   ;
+; Logic elements in carry chains    ; 0                   ;
+; User inserted logic elements      ; 0                   ;
+; I/O pins                          ; 212 / 189 ( 112 % ) ;
+;     -- Clock pins                 ; 0 / 2 ( 0 % )       ;
+;     -- Dedicated input pins       ; 0 / 4 ( 0 % )       ;
+; Global signals                    ; 0                   ;
+; EABs                              ; 0 / 9 ( 0 % )       ;
+; Total memory bits                 ; 0 / 18,432 ( 0 % )  ;
+; Total RAM block bits              ; 0 / 18,432 ( 0 % )  ;
+; Maximum fan-out node              ; ASP_length~272      ;
+; Maximum fan-out                   ; 11                  ;
+; Highest non-global fan-out signal ; ASP_length~272      ;
+; Highest non-global fan-out        ; 11                  ;
+; Total fan-out                     ; 974                 ;
+; Average fan-out                   ; 2.07                ;
++-----------------------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                  ;
++----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+; |g14_longest_row           ; 258 (258)   ; 0            ; 0           ; 212  ; 258 (258)    ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |g14_longest_row    ; work         ;
++----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------+
+; Delay Chain Summary                    ;
++---------------+----------+-------------+
+; Name          ; Pin Type ; Pad to Core ;
++---------------+----------+-------------+
+; ASP_c_0[3][0] ; Input    ; OFF         ;
+; ASP_c_0[3][1] ; Input    ; OFF         ;
+; ASP_c_0[3][2] ; Input    ; OFF         ;
+; ASP_c_0[2][0] ; Input    ; OFF         ;
+; ASP_c_0[2][1] ; Input    ; OFF         ;
+; ASP_c_0[2][2] ; Input    ; OFF         ;
+; ASP_c_0[1][0] ; Input    ; OFF         ;
+; ASP_c_0[1][1] ; Input    ; OFF         ;
+; ASP_c_0[1][2] ; Input    ; OFF         ;
+; ASP_c_0[0][0] ; Input    ; OFF         ;
+; ASP_c_0[0][1] ; Input    ; OFF         ;
+; ASP_c_0[0][2] ; Input    ; OFF         ;
+; ASP_c_1[3][0] ; Input    ; OFF         ;
+; ASP_c_1[3][1] ; Input    ; OFF         ;
+; ASP_c_1[3][2] ; Input    ; OFF         ;
+; ASP_c_1[2][0] ; Input    ; OFF         ;
+; ASP_c_1[2][1] ; Input    ; OFF         ;
+; ASP_c_1[2][2] ; Input    ; OFF         ;
+; ASP_c_1[1][0] ; Input    ; OFF         ;
+; ASP_c_1[1][1] ; Input    ; OFF         ;
+; ASP_c_1[1][2] ; Input    ; OFF         ;
+; ASP_c_1[0][0] ; Input    ; OFF         ;
+; ASP_c_1[0][1] ; Input    ; OFF         ;
+; ASP_c_1[0][2] ; Input    ; OFF         ;
+; ASP_c_2[3][0] ; Input    ; OFF         ;
+; ASP_c_2[3][1] ; Input    ; OFF         ;
+; ASP_c_2[3][2] ; Input    ; OFF         ;
+; ASP_c_2[2][0] ; Input    ; OFF         ;
+; ASP_c_2[2][1] ; Input    ; OFF         ;
+; ASP_c_2[2][2] ; Input    ; OFF         ;
+; ASP_c_2[1][0] ; Input    ; OFF         ;
+; ASP_c_2[1][1] ; Input    ; OFF         ;
+; ASP_c_2[1][2] ; Input    ; OFF         ;
+; ASP_c_2[0][0] ; Input    ; OFF         ;
+; ASP_c_2[0][1] ; Input    ; OFF         ;
+; ASP_c_2[0][2] ; Input    ; OFF         ;
+; ASP_c_3[3][0] ; Input    ; OFF         ;
+; ASP_c_3[3][1] ; Input    ; OFF         ;
+; ASP_c_3[3][2] ; Input    ; OFF         ;
+; ASP_c_3[2][0] ; Input    ; OFF         ;
+; ASP_c_3[2][1] ; Input    ; OFF         ;
+; ASP_c_3[2][2] ; Input    ; OFF         ;
+; ASP_c_3[1][0] ; Input    ; OFF         ;
+; ASP_c_3[1][1] ; Input    ; OFF         ;
+; ASP_c_3[1][2] ; Input    ; OFF         ;
+; ASP_c_3[0][0] ; Input    ; OFF         ;
+; ASP_c_3[0][1] ; Input    ; OFF         ;
+; ASP_c_3[0][2] ; Input    ; OFF         ;
+; ASP_c_4[3][0] ; Input    ; OFF         ;
+; ASP_c_4[3][1] ; Input    ; OFF         ;
+; ASP_c_4[3][2] ; Input    ; OFF         ;
+; ASP_c_4[2][0] ; Input    ; OFF         ;
+; ASP_c_4[2][1] ; Input    ; OFF         ;
+; ASP_c_4[2][2] ; Input    ; OFF         ;
+; ASP_c_4[1][0] ; Input    ; OFF         ;
+; ASP_c_4[1][1] ; Input    ; OFF         ;
+; ASP_c_4[1][2] ; Input    ; OFF         ;
+; ASP_c_4[0][0] ; Input    ; OFF         ;
+; ASP_c_4[0][1] ; Input    ; OFF         ;
+; ASP_c_4[0][2] ; Input    ; OFF         ;
+; ASP_c_5[3][0] ; Input    ; OFF         ;
+; ASP_c_5[3][1] ; Input    ; OFF         ;
+; ASP_c_5[3][2] ; Input    ; OFF         ;
+; ASP_c_5[2][0] ; Input    ; OFF         ;
+; ASP_c_5[2][1] ; Input    ; OFF         ;
+; ASP_c_5[2][2] ; Input    ; OFF         ;
+; ASP_c_5[1][0] ; Input    ; OFF         ;
+; ASP_c_5[1][1] ; Input    ; OFF         ;
+; ASP_c_5[1][2] ; Input    ; OFF         ;
+; ASP_c_5[0][0] ; Input    ; OFF         ;
+; ASP_c_5[0][1] ; Input    ; OFF         ;
+; ASP_c_5[0][2] ; Input    ; OFF         ;
+; ASP_c_6[3][0] ; Input    ; OFF         ;
+; ASP_c_6[3][1] ; Input    ; OFF         ;
+; ASP_c_6[3][2] ; Input    ; OFF         ;
+; ASP_c_6[2][0] ; Input    ; OFF         ;
+; ASP_c_6[2][1] ; Input    ; OFF         ;
+; ASP_c_6[2][2] ; Input    ; OFF         ;
+; ASP_c_6[1][0] ; Input    ; OFF         ;
+; ASP_c_6[1][1] ; Input    ; OFF         ;
+; ASP_c_6[1][2] ; Input    ; OFF         ;
+; ASP_c_6[0][0] ; Input    ; OFF         ;
+; ASP_c_6[0][1] ; Input    ; OFF         ;
+; ASP_c_6[0][2] ; Input    ; OFF         ;
+; ASP_c_7[3][0] ; Input    ; OFF         ;
+; ASP_c_7[3][1] ; Input    ; OFF         ;
+; ASP_c_7[3][2] ; Input    ; OFF         ;
+; ASP_c_7[2][0] ; Input    ; OFF         ;
+; ASP_c_7[2][1] ; Input    ; OFF         ;
+; ASP_c_7[2][2] ; Input    ; OFF         ;
+; ASP_c_7[1][0] ; Input    ; OFF         ;
+; ASP_c_7[1][1] ; Input    ; OFF         ;
+; ASP_c_7[1][2] ; Input    ; OFF         ;
+; ASP_c_7[0][0] ; Input    ; OFF         ;
+; ASP_c_7[0][1] ; Input    ; OFF         ;
+; ASP_c_7[0][2] ; Input    ; OFF         ;
+; ASP_r_7[0][0] ; Input    ; OFF         ;
+; ASP_r_7[0][2] ; Input    ; OFF         ;
+; ASP_r_7[0][1] ; Input    ; OFF         ;
+; ASP_r_7[1][0] ; Input    ; OFF         ;
+; ASP_r_7[1][2] ; Input    ; OFF         ;
+; ASP_r_7[1][1] ; Input    ; OFF         ;
+; ASP_r_7[2][0] ; Input    ; OFF         ;
+; ASP_r_7[2][2] ; Input    ; OFF         ;
+; ASP_r_7[2][1] ; Input    ; OFF         ;
+; ASP_r_7[3][0] ; Input    ; OFF         ;
+; ASP_r_7[3][2] ; Input    ; OFF         ;
+; ASP_r_7[3][1] ; Input    ; OFF         ;
+; ASP_dr[2]     ; Input    ; OFF         ;
+; ASP_empty[2]  ; Input    ; OFF         ;
+; ASP_r_3[0][0] ; Input    ; OFF         ;
+; ASP_r_3[0][2] ; Input    ; OFF         ;
+; ASP_r_3[0][1] ; Input    ; OFF         ;
+; ASP_r_3[1][0] ; Input    ; OFF         ;
+; ASP_r_3[1][2] ; Input    ; OFF         ;
+; ASP_r_3[1][1] ; Input    ; OFF         ;
+; ASP_r_3[2][0] ; Input    ; OFF         ;
+; ASP_r_3[2][2] ; Input    ; OFF         ;
+; ASP_r_3[2][1] ; Input    ; OFF         ;
+; ASP_r_3[3][0] ; Input    ; OFF         ;
+; ASP_r_3[3][2] ; Input    ; OFF         ;
+; ASP_r_3[3][1] ; Input    ; OFF         ;
+; ASP_r_1[0][0] ; Input    ; OFF         ;
+; ASP_r_1[0][2] ; Input    ; OFF         ;
+; ASP_r_1[0][1] ; Input    ; OFF         ;
+; ASP_r_1[1][0] ; Input    ; OFF         ;
+; ASP_r_1[1][2] ; Input    ; OFF         ;
+; ASP_r_1[1][1] ; Input    ; OFF         ;
+; ASP_empty[0]  ; Input    ; OFF         ;
+; ASP_dr[0]     ; Input    ; OFF         ;
+; ASP_r_0[0][0] ; Input    ; OFF         ;
+; ASP_r_0[0][2] ; Input    ; OFF         ;
+; ASP_r_0[0][1] ; Input    ; OFF         ;
+; ASP_r_0[1][0] ; Input    ; OFF         ;
+; ASP_r_0[1][2] ; Input    ; OFF         ;
+; ASP_r_0[1][1] ; Input    ; OFF         ;
+; ASP_r_0[2][0] ; Input    ; OFF         ;
+; ASP_r_0[2][2] ; Input    ; OFF         ;
+; ASP_r_0[2][1] ; Input    ; OFF         ;
+; ASP_r_0[3][0] ; Input    ; OFF         ;
+; ASP_r_0[3][2] ; Input    ; OFF         ;
+; ASP_r_0[3][1] ; Input    ; OFF         ;
+; ASP_r_1[2][0] ; Input    ; OFF         ;
+; ASP_r_1[2][2] ; Input    ; OFF         ;
+; ASP_r_1[2][1] ; Input    ; OFF         ;
+; ASP_r_1[3][0] ; Input    ; OFF         ;
+; ASP_r_1[3][2] ; Input    ; OFF         ;
+; ASP_r_1[3][1] ; Input    ; OFF         ;
+; ASP_dr[1]     ; Input    ; OFF         ;
+; ASP_empty[1]  ; Input    ; OFF         ;
+; ASP_r_2[0][0] ; Input    ; OFF         ;
+; ASP_r_2[0][2] ; Input    ; OFF         ;
+; ASP_r_2[0][1] ; Input    ; OFF         ;
+; ASP_r_2[1][0] ; Input    ; OFF         ;
+; ASP_r_2[1][2] ; Input    ; OFF         ;
+; ASP_r_2[1][1] ; Input    ; OFF         ;
+; ASP_r_2[2][0] ; Input    ; OFF         ;
+; ASP_r_2[2][2] ; Input    ; OFF         ;
+; ASP_r_2[2][1] ; Input    ; OFF         ;
+; ASP_r_2[3][0] ; Input    ; OFF         ;
+; ASP_r_2[3][2] ; Input    ; OFF         ;
+; ASP_r_2[3][1] ; Input    ; OFF         ;
+; ASP_dr[3]     ; Input    ; OFF         ;
+; ASP_empty[3]  ; Input    ; OFF         ;
+; ASP_dr[4]     ; Input    ; OFF         ;
+; ASP_empty[4]  ; Input    ; OFF         ;
+; ASP_r_5[0][0] ; Input    ; OFF         ;
+; ASP_r_5[0][2] ; Input    ; OFF         ;
+; ASP_r_5[0][1] ; Input    ; OFF         ;
+; ASP_r_5[1][0] ; Input    ; OFF         ;
+; ASP_r_5[1][2] ; Input    ; OFF         ;
+; ASP_r_5[1][1] ; Input    ; OFF         ;
+; ASP_r_5[2][0] ; Input    ; OFF         ;
+; ASP_r_5[2][2] ; Input    ; OFF         ;
+; ASP_r_5[2][1] ; Input    ; OFF         ;
+; ASP_r_5[3][0] ; Input    ; OFF         ;
+; ASP_r_5[3][2] ; Input    ; OFF         ;
+; ASP_r_5[3][1] ; Input    ; OFF         ;
+; ASP_r_4[0][0] ; Input    ; OFF         ;
+; ASP_r_4[0][2] ; Input    ; OFF         ;
+; ASP_r_4[0][1] ; Input    ; OFF         ;
+; ASP_r_4[1][0] ; Input    ; OFF         ;
+; ASP_r_4[1][2] ; Input    ; OFF         ;
+; ASP_r_4[1][1] ; Input    ; OFF         ;
+; ASP_r_4[2][0] ; Input    ; OFF         ;
+; ASP_r_4[2][2] ; Input    ; OFF         ;
+; ASP_r_4[2][1] ; Input    ; OFF         ;
+; ASP_r_4[3][0] ; Input    ; OFF         ;
+; ASP_r_4[3][2] ; Input    ; OFF         ;
+; ASP_r_4[3][1] ; Input    ; OFF         ;
+; ASP_dr[5]     ; Input    ; OFF         ;
+; ASP_empty[5]  ; Input    ; OFF         ;
+; ASP_r_6[0][0] ; Input    ; OFF         ;
+; ASP_r_6[0][2] ; Input    ; OFF         ;
+; ASP_r_6[0][1] ; Input    ; OFF         ;
+; ASP_r_6[1][0] ; Input    ; OFF         ;
+; ASP_r_6[1][2] ; Input    ; OFF         ;
+; ASP_r_6[1][1] ; Input    ; OFF         ;
+; ASP_r_6[2][0] ; Input    ; OFF         ;
+; ASP_r_6[2][2] ; Input    ; OFF         ;
+; ASP_r_6[2][1] ; Input    ; OFF         ;
+; ASP_r_6[3][0] ; Input    ; OFF         ;
+; ASP_r_6[3][2] ; Input    ; OFF         ;
+; ASP_r_6[3][1] ; Input    ; OFF         ;
+; ASP_dr[6]     ; Input    ; OFF         ;
+; ASP_empty[6]  ; Input    ; OFF         ;
+; ASP_empty[7]  ; Input    ; OFF         ;
+; ASP_dr[7]     ; Input    ; OFF         ;
+; NM            ; Input    ; OFF         ;
+; ASP_lrow[2]   ; Output   ; OFF         ;
+; ASP_lrow[1]   ; Output   ; OFF         ;
+; ASP_lrow[0]   ; Output   ; OFF         ;
++---------------+----------+-------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Info: *******************************************************************
+Info: Running Quartus II Fitter
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+    Info: Processing started: Thu Oct 13 14:27:54 2011
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off g14_lab2 -c g14_lab2
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Selected device EPF10K70RC240-4 for design "g14_lab2"
+Error: Can't place all I/O pins in the current design
+    Error: There are 183 regular I/O pins, 4 dedicated fast pins and 2 dedicated clocks still available for the Fitter to place remaining pins in the design
+    Error: Fitter needs to place 209 input pins, because 0 of the pins cannot be placed on dedicated fast or dedicated clock pins
+    Error: Fitter needs to place 3 output pins
+Info: Inserted 0 logic cells in first fitting attempt
+Error: Project requires 212 I/O pins, but the selected device can contain only 183 I/O pins
+Error: Can't find fit
+Error: Quartus II Fitter was unsuccessful. 6 errors, 0 warnings
+    Error: Peak virtual memory: 215 megabytes
+    Error: Processing ended: Thu Oct 13 14:28:00 2011
+    Error: Elapsed time: 00:00:06
+    Error: Total CPU time (on all processors): 00:00:02
+
+

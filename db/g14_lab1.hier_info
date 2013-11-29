@@ -1,0 +1,22 @@
+|g14_lab1_count4
+Q[0] <= g14_count4:inst.Q[0]
+Q[1] <= g14_count4:inst.Q[1]
+Q[2] <= g14_count4:inst.Q[2]
+Q[3] <= g14_count4:inst.Q[3]
+clk => g14_count4:inst.clk
+sc => g14_count4:inst.sc
+
+
+|g14_lab1_count4|g14_count4:inst
+Q[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst3.CLK
+clk => inst5.CLK
+clk => inst6.CLK
+clk => inst7.CLK
+sc => inst4.IN1
+sc => inst.IN1
+
+

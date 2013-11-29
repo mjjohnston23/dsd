@@ -1,0 +1,59 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+11
+980
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+g14_row_incr_rand
+# storage
+db|g14_lab3.(0).cnf
+db|g14_lab3.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+g14_row_incr_rand.vhd
+51eeef7ae53afa263f117ffbbb40af37
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# include_file {
+g14_row_incr_config.vhd
+2fbaccc5c1ddcd313d599351c43837
+}
+# hierarchies {
+|
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

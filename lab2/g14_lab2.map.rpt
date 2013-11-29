@@ -1,0 +1,349 @@
+Analysis & Synthesis report for g14_lab2
+Thu Oct 13 14:27:52 2011
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. User-Specified and Inferred Latches
+  8. General Register Statistics
+  9. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                ;
++-----------------------------+-----------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Oct 13 14:27:52 2011         ;
+; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Full Version ;
+; Revision Name               ; g14_lab2                                      ;
+; Top-level Entity Name       ; g14_longest_row                               ;
+; Family                      ; FLEX10K                                       ;
+; Total logic elements        ; 258                                           ;
+; Total pins                  ; 212                                           ;
+; Total memory bits           ; 0                                             ;
++-----------------------------+-----------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                  ;
++--------------------------------------------------------------+-----------------+---------------+
+; Option                                                       ; Setting         ; Default Value ;
++--------------------------------------------------------------+-----------------+---------------+
+; Device                                                       ; EPF10K70RC240-4 ;               ;
+; Top-level entity name                                        ; g14_longest_row ; g14_lab2      ;
+; Family name                                                  ; FLEX10K         ; Stratix II    ;
+; Use Generated Physical Constraints File                      ; Off             ;               ;
+; Use smart compilation                                        ; Off             ; Off           ;
+; Create Debugging Nodes for IP Cores                          ; Off             ; Off           ;
+; Preserve fewer node names                                    ; On              ; On            ;
+; Disable OpenCore Plus hardware evaluation                    ; Off             ; Off           ;
+; Verilog Version                                              ; Verilog_2001    ; Verilog_2001  ;
+; VHDL Version                                                 ; VHDL93          ; VHDL93        ;
+; State Machine Processing                                     ; Auto            ; Auto          ;
+; Safe State Machine                                           ; Off             ; Off           ;
+; Extract Verilog State Machines                               ; On              ; On            ;
+; Extract VHDL State Machines                                  ; On              ; On            ;
+; Ignore Verilog initial constructs                            ; Off             ; Off           ;
+; Iteration limit for constant Verilog loops                   ; 5000            ; 5000          ;
+; Iteration limit for non-constant Verilog loops               ; 250             ; 250           ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On              ; On            ;
+; Parallel Synthesis                                           ; Off             ; Off           ;
+; NOT Gate Push-Back                                           ; On              ; On            ;
+; Power-Up Don't Care                                          ; On              ; On            ;
+; Remove Redundant Logic Cells                                 ; Off             ; Off           ;
+; Remove Duplicate Registers                                   ; On              ; On            ;
+; Ignore CARRY Buffers                                         ; Off             ; Off           ;
+; Ignore CASCADE Buffers                                       ; Off             ; Off           ;
+; Ignore GLOBAL Buffers                                        ; Off             ; Off           ;
+; Ignore ROW GLOBAL Buffers                                    ; Off             ; Off           ;
+; Ignore LCELL Buffers                                         ; Off             ; Off           ;
+; Ignore SOFT Buffers                                          ; On              ; On            ;
+; Limit AHDL Integers to 32 Bits                               ; Off             ; Off           ;
+; Auto Implement in ROM                                        ; Off             ; Off           ;
+; Optimization Technique                                       ; Area            ; Area          ;
+; Carry Chain Length                                           ; 32              ; 32            ;
+; Cascade Chain Length                                         ; 2               ; 2             ;
+; Auto Carry Chains                                            ; On              ; On            ;
+; Auto Open-Drain Pins                                         ; On              ; On            ;
+; Auto ROM Replacement                                         ; On              ; On            ;
+; Auto RAM Replacement                                         ; On              ; On            ;
+; Auto Clock Enable Replacement                                ; On              ; On            ;
+; Strict RAM Replacement                                       ; Off             ; Off           ;
+; Auto Resource Sharing                                        ; Off             ; Off           ;
+; Allow Any RAM Size For Recognition                           ; Off             ; Off           ;
+; Allow Any ROM Size For Recognition                           ; Off             ; Off           ;
+; Use LogicLock Constraints during Resource Balancing          ; On              ; On            ;
+; Ignore translate_off and synthesis_off directives            ; Off             ; Off           ;
+; Show Parameter Settings Tables in Synthesis Report           ; On              ; On            ;
+; HDL message level                                            ; Level2          ; Level2        ;
+; Suppress Register Optimization Related Messages              ; Off             ; Off           ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100             ; 100           ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100             ; 100           ;
+; Block Design Naming                                          ; Auto            ; Auto          ;
+; Synthesis Effort                                             ; Auto            ; Auto          ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On              ; On            ;
+; Analysis & Synthesis Message Level                           ; Medium          ; Medium        ;
++--------------------------------------------------------------+-----------------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                 ;
++----------------------------------+-----------------+-----------------+---------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path    ;
++----------------------------------+-----------------+-----------------+---------------------------------+
+; g14_longest_row.vhd              ; yes             ; User VHDL File  ; H:/dsd/lab2/g14_longest_row.vhd ;
++----------------------------------+-----------------+-----------------+---------------------------------+
+
+
++-------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary     ;
++--------------------------------+----------------+
+; Resource                       ; Usage          ;
++--------------------------------+----------------+
+; Total logic elements           ; 258            ;
+; Total combinational functions  ; 258            ;
+;     -- Total 4-input functions ; 182            ;
+;     -- Total 3-input functions ; 69             ;
+;     -- Total 2-input functions ; 7              ;
+;     -- Total 1-input functions ; 0              ;
+;     -- Total 0-input functions ; 0              ;
+; Total registers                ; 0              ;
+; I/O pins                       ; 212            ;
+; Maximum fan-out node           ; ASP_length~272 ;
+; Maximum fan-out                ; 11             ;
+; Total fan-out                  ; 974            ;
+; Average fan-out                ; 2.07           ;
++--------------------------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                    ;
++----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+; |g14_longest_row           ; 258 (258)   ; 0            ; 0           ; 212  ; 258 (258)    ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |g14_longest_row    ; work         ;
++----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; ASP_lrow[2]$latch                                  ; NM                  ; yes                    ;
+; ASP_lrow[1]$latch                                  ; NM                  ; yes                    ;
+; ASP_lrow[0]$latch                                  ; NM                  ; yes                    ;
+; Number of user-specified and inferred latches = 3  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+    Info: Processing started: Thu Oct 13 14:27:43 2011
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g14_lab2 -c g14_lab2
+Info: Found 3 design units, including 1 entities, in source file g14_longest_row.vhd
+    Info: Found design unit 1: define_ASP
+    Info: Found design unit 2: g14_longest_row-a
+    Info: Found entity 1: g14_longest_row
+Info: Found 1 design units, including 1 entities, in source file g14_lab2.bdf
+    Info: Found entity 1: g14_lab2
+Info: Found 3 design units, including 1 entities, in source file g14_row_config.vhd
+    Info: Found design unit 1: define_ASP_2
+    Info: Found design unit 2: g14_row_config-a
+    Info: Found entity 1: g14_row_config
+Info: Elaborating entity "g14_longest_row" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at g14_longest_row.vhd(46): object "ASP_c_i" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(55): signal "ASP_r_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(64): signal "ASP_r_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(65): signal "ASP_c_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(67): signal "ASP_r_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(68): signal "ASP_c_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(70): signal "ASP_r_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(71): signal "ASP_c_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(73): signal "ASP_r_3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(74): signal "ASP_c_3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(76): signal "ASP_r_4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(77): signal "ASP_c_4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(79): signal "ASP_r_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(80): signal "ASP_c_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(82): signal "ASP_r_6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(83): signal "ASP_c_6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(85): signal "ASP_r_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(86): signal "ASP_c_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(104): signal "ASP_lrow" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(106): signal "ASP_r_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(107): signal "ASP_c_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(109): signal "ASP_r_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(110): signal "ASP_c_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(112): signal "ASP_r_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(113): signal "ASP_c_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(115): signal "ASP_r_3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(116): signal "ASP_c_3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(118): signal "ASP_r_4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(119): signal "ASP_c_4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(121): signal "ASP_r_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(122): signal "ASP_c_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(124): signal "ASP_r_6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(125): signal "ASP_c_6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(127): signal "ASP_r_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at g14_longest_row.vhd(128): signal "ASP_c_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at g14_longest_row.vhd(44): inferring latch(es) for signal or variable "ASP_lrow", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "ASP_lrow[2]" at g14_longest_row.vhd(44)
+Info (10041): Inferred latch for "ASP_lrow[1]" at g14_longest_row.vhd(44)
+Info (10041): Inferred latch for "ASP_lrow[0]" at g14_longest_row.vhd(44)
+Warning: Design contains 96 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ASP_c_0[3][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_0[3][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_0[3][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_0[2][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_0[2][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_0[2][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_0[1][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_0[1][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_0[1][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_0[0][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_0[0][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_0[0][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_1[3][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_1[3][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_1[3][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_1[2][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_1[2][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_1[2][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_1[1][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_1[1][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_1[1][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_1[0][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_1[0][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_1[0][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_2[3][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_2[3][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_2[3][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_2[2][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_2[2][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_2[2][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_2[1][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_2[1][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_2[1][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_2[0][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_2[0][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_2[0][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_3[3][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_3[3][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_3[3][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_3[2][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_3[2][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_3[2][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_3[1][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_3[1][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_3[1][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_3[0][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_3[0][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_3[0][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_4[3][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_4[3][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_4[3][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_4[2][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_4[2][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_4[2][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_4[1][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_4[1][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_4[1][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_4[0][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_4[0][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_4[0][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_5[3][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_5[3][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_5[3][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_5[2][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_5[2][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_5[2][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_5[1][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_5[1][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_5[1][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_5[0][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_5[0][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_5[0][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_6[3][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_6[3][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_6[3][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_6[2][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_6[2][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_6[2][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_6[1][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_6[1][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_6[1][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_6[0][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_6[0][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_6[0][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_7[3][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_7[3][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_7[3][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_7[2][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_7[2][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_7[2][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_7[1][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_7[1][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_7[1][2]"
+    Warning (15610): No output dependent on input pin "ASP_c_7[0][0]"
+    Warning (15610): No output dependent on input pin "ASP_c_7[0][1]"
+    Warning (15610): No output dependent on input pin "ASP_c_7[0][2]"
+Info: Implemented 470 device resources after synthesis - the final resource count might be different
+    Info: Implemented 209 input pins
+    Info: Implemented 3 output pins
+    Info: Implemented 258 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 133 warnings
+    Info: Peak virtual memory: 213 megabytes
+    Info: Processing ended: Thu Oct 13 14:27:53 2011
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:03
+
+

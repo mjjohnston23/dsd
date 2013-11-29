@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Oct 31 14:46:09 2011
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Full Version
+Revision Name : g14_lab3
+Top-level Entity Name : g14_row_incr_rand
+Family : Cyclone II
+Total logic elements : 380
+    Total combinational functions : 380
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 266
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
